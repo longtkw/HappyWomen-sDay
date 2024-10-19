@@ -1,0 +1,94 @@
+<html lang="vi"
+    __fvdsurfcanyoninserted="1"
+    class="
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+    "
+>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="shortcut icon" type="image/png" href="./meo.jpg"/>
+        <title>Happy Birthday</title>
+        <link rel="stylesheet" href="./style.css">
+        <script>
+            window.open = function () {};
+            window.print = function () {};
+            // Support hover state for mobile.
+            if (false) {
+                window.ontouchstart = function () {};
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"
+        ></script>
+        <meta content="clickberry-extension-here" />
+    </head>
+
+    <body>
+        <link
+            href="https://fonts.googleapis.com/css?family=Wendy+One"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <div class="pyro">
+            <div class="before">
+                
+            </div>
+            <div class="after">
+
+            </div>
+            <div class="container">
+                <!-- 2. Dòng chữ Happy Birthday
+                Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
+                <div class="balloon">
+                    <div><span>H</span></div>
+                    <div><span>A</span></div>
+                    <div><span>P</span></div>
+                    <div><span>P</span></div>
+                    <div><span>Y</span></div>
+                    <div><span>W</span></div>
+                    <div><span>O</span></div>
+                    <div><span>M</span></div>
+                    <div><span>E</span></div>
+                    <div><span>N'S</span></div>
+                    <div><span>D</span></div>
+                    <div><span>A</span></div>
+                    <div><span>Y</span></div>
+
+                </div>
+                <div class="avatar">
+                    <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+                    <img src="./GT.jpg" alt="" class="avatar__img" onclick="showMessage()" />
+                    <!-- 4. Tên của người đó -->
+                    <h1 onclick="showMessage()" class="avatar__title">Trần Hoàng Gia Thiên</h1>
+                </div>
+                
+                <!-- 5. Phần nhạc -->
+                <!-- <audio id="player" autoplay loop>
+                    <source src="./music.mp3" type="audio/mp3">
+                </audio> -->
+            </div>
+        </div>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage("resize", "*");
+            }
+            function showMessage() {
+                // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+                swal({
+                    title: "Lời Nhắn", // Tiêu đề của popup
+                    text: "Dear my darling :33, Cúnn, chúc cưng ngày càng xinh đẹp, học giỏi, hạnh phúc bên những người thân thương. Luôn có sức khoẻ, niềm vui xung quanh và lúc nào cũng nở nụ cười trên môi. Vượt qua hết những khó khăn, thử thách và không lùi bước. Có chuyện gì buồn, vui, muốn tâm sự cứ nhắn t. Và đôi lúc t có làm gì cho m buồn, không vừa ý, hài lòng thì cho t xin lỗi he, lâu lâu mình bị khờ, đôi lúc giả vờ khờ :)). Không thể nói hết những điều cần nói, còn nhiều điều chưa dám nói ra, nên chỉ có đôi lời nhắn nhủ vậy thôi, đành cảm nhận thôi ha. Và hơn hết, sớm có bồ ._. 20/10 vui vẻ, em gái Song Tử tháng 6  ! Ký tên LONG.  ", // Nội dung lời nhắn
+                    button: {
+                        text: "❤️️",
+                    },
+                });
+            }
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+</html>
